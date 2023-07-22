@@ -1,15 +1,16 @@
+// setup date
+const date = (document.getElementById(
+  "date"
+).innerHTML = new Date().getFullYear());
+// setup nav
 const navBtn = document.getElementById("nav-btn");
 const navbar = document.getElementById("navbar");
 const navClose = document.getElementById("nav-close");
-const date=document.getElementById("date");
-const year=new Date().getFullYear();
-date.innerHTML=year;
-
+// show nav
 navBtn.addEventListener("click", () => {
   navbar.classList.add("showNav");
 });
-
+// close nav
 navClose.addEventListener("click", () => {
   navbar.classList.remove("showNav");
 });
-
